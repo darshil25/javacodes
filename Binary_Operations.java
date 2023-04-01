@@ -35,10 +35,25 @@ public class Binary_Operations {
         return (n | BitMask);
     }
 
+    // clear(1->0) last nbits of integer
+    public static int clearLastIBits(int n, int i) {
+        int BitMask = (~0) << i;
+        return n & BitMask;
+    }
+
+    public static int clearRangeofBits(int n, int i, int j) {
+        int a = (1<<i) - 1;
+        int b = ((~0)<<(j+1));
+        int BitMask = a|b;
+        return n&BitMask;
+    }
+
     public static void main(String[] args) {
         System.out.println(GetithBit(15, 2));
         System.out.println(SetithBit(10, 2));
         System.out.println(ClearithBit(10, 1));
         System.out.println(UpdateithBit(10, 2, 1));
+        System.out.println(clearLastIBits(15, 2));
+        System.out.println(clearRangeofBits(15, 2, 7));
     }
 }
