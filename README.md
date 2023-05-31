@@ -1,2 +1,2 @@
 # javacodes
-Sample of JAVA programs
+Sample of JAVA programs.
