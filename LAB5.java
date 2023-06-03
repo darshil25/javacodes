@@ -26,7 +26,7 @@ public class LAB5 extends Frame implements ActionListener {
 
         messageLabel = new Label("");
 
-        setLayout(new GridLayout(4, 2));
+        setLayout(new FlowLayout());
         add(new Label("No:"));
         add(noField);
         add(new Label("Name:"));
