@@ -1,0 +1,11 @@
+backtracking - 6
+Alist - 4
+LList - 9
+Stack - 6
+ques - 2.45
+greedy - 3
+btree - 5
+bst - 5
+heaps - 3.5
+hashing - 8
+tries - 5
