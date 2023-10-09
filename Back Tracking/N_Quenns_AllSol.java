@@ -1,4 +1,4 @@
-public class N_Quenns {
+public class N_Quenns_AllSol {
     public static void printBoard(char a[][]) {
         System.out.println("----- Chess Board -----");
         for (int i = 0; i < a.length; i++) {
