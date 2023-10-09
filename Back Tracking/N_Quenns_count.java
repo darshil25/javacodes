@@ -36,7 +36,7 @@ public class N_Quenns_count {
             if (safe(arr, row, i)) {
                 arr[row][i] = 'Q';
                 nQueens(arr, row + 1);
-                arr[row][i] = 'x';
+                arr[row][i] = 'x'; //backtracking step
             }
         }
     }

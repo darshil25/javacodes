@@ -1,4 +1,4 @@
-public class N_Quenns_AllSol {
+public class N_Quenns_Any_OneSol {
     public static void printBoard(char a[][]) {
         System.out.println("----- Chess Board -----");
         for (int i = 0; i < a.length; i++) {
@@ -33,21 +33,24 @@ public class N_Quenns_AllSol {
         return true;
     }
 
-    public static void nQueens(char arr[][], int row){
+    public static boolean nQueens(char arr[][], int row){
         //base case
         if(row == arr.length){
-            printBoard(arr);
-            return;
+            //printBoard(arr);
+            return true;
         }
 
         //resursion
         for(int i=0; i<arr.length; i++){
             if(safe(arr, row, i)){
                 arr[row][i] = 'Q';
-                nQueens(arr, row+1);
-                arr[row][i] = 'x'; //backtracking step
+                if(nQueens(arr, row+1)){
+                    return true;
+                }
+                arr[row][i] = 'x';
             }
         }
+        return true;
     }
 
     public static void main(String[] args) {
@@ -58,6 +61,12 @@ public class N_Quenns_AllSol {
                 board[i][j] = 'x';
             }
         }
-        nQueens(board, 0);
+        if(nQueens(board, 0)){
+            System.out.println("possible solution found");
+            printBoard(board);
+        }
+        else{
+            System.out.println("possible solution not found");
+        }
     }
 }
