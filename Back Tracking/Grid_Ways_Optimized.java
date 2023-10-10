@@ -14,7 +14,7 @@ public class Grid_Ways_Optimized {
         return ((permutation(w1+w2))  / (permutation(w1)*permutation(w2)));
     }
     public static void main(String[] args) {
-        int n = 3000, m = 3333;
+        int n = 3, m = 3;
         System.out.println(gridways( n, m));
     }
 }
