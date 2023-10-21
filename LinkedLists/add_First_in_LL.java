@@ -1,4 +1,4 @@
-public class add_in_ll {
+public class add_First_in_LL {
 
     public class Node{
             int data;
@@ -31,7 +31,7 @@ public class add_in_ll {
         head = newNode;
     }    
     public static void main(String[] args) {
-        add_in_ll ll = new add_in_ll();
+        add_First_in_LL ll = new add_First_in_LL();
 
         ll.addFirst(1);
         ll.addFirst(2);
