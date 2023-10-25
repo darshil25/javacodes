@@ -46,6 +46,9 @@ public class Find_Remove_nth_Node {
         //now we have to reach node that is previous node of targeted node
         //target node = size-n+1
         //previous node = size - n
+        //for ex if size = 5, target node is 3rd and list is 1->2->3->4->5->null
+        //so, previous node = 5 - 3(3rd node) = 2
+        
         int i=1; //because we already defined condition for 0 aka Head
         int indexToFind = size-n;
         Node prev = head;
