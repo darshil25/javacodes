@@ -1,7 +1,4 @@
-/**
- * Delete_Cycle
- */
-public class Delete_Cycle {
+public class Detect_Cycle {
     public class Node {
         int data;
         Node next;
@@ -35,7 +32,7 @@ public class Delete_Cycle {
 
     public static void main(String[] args) {
         // Sample cycle LL
-        Delete_Cycle LL = new Delete_Cycle();
+        Detect_Cycle LL = new Detect_Cycle();
         LL.head = LL.new Node(1);
         LL.head.next = LL.new Node(2);
         LL.head.next.next = LL.new Node(3);
