@@ -20,7 +20,7 @@ public class Detect_Cycle {
         Node slow = head;
         Node fast = head;
 
-        while (fast != null && fast.next != null) { // Use '&&' instead of '||'
+        while (fast != null && fast.next != null) { // fast = null for even length(2, 4,6,...) list and fast.next = null for odd length(1,3,5,...) List
             slow = slow.next; // +1
             fast = fast.next.next; // +2
             if (slow == fast) { // Both pointers meet at the same node, a cycle exists.
